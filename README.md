@@ -376,23 +376,3 @@ export default Services
       git branch -M main
       git push -u origin main
 
-#### Benefits
-
-- don't need to keep project locally
-- automatic builds
-
-#### Warnings "Gotcha"
-
-- Netlify treats warnings as errors
-
-package.json
-
-```json
-"scripts": {
-    "start": "react-scripts start",
-    "build": "CI= react-scripts build",
-    "local-build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-```
